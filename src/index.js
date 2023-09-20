@@ -1,8 +1,13 @@
-import menu from './menu.js'
+import addNavBar from './addNavBar.js';
+import addFooter from './addFooter.js';
+import showHome from './showHome.js';
+import './style.css';
 
-const body = document.getElementById('body');
-const generalContainer = document.getElementById('content');
+const body = document.querySelector('body');
+body.classList.add('body');
 
-generalContainer.textContent = 'hola!'
+addNavBar(body);
+showHome();
+addFooter(body);
 
-console.log(menu)
+

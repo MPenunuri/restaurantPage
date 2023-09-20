@@ -1,0 +1,139 @@
+:root{
+    --primary-font-family: 'Courier New', Courier, monospace;;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+
+.body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: var(--primary-font-family);
+    overflow: scroll;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: gray;
+    gap: 1rem;
+}
+
+.header{
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navBtn{
+    flex-grow: 0;
+    height: 80%;
+    width: 20%;
+    border-radius: 25px;
+    background-color: white;
+    font-family: var(--primary-font-family);
+}
+
+.navBtn:hover{
+    background-color: rgb(100, 98, 95);
+    cursor: pointer;
+}
+
+.footer{
+    height: 5vh;
+    width: 100vw;
+    background-color: gray;
+}
+
+.content{
+    top: 10vh;
+    width: 100vw;
+    gap: 1.5rem;
+}
+
+.home{
+    height: 80vh;
+    background-image: url('../assets/home_pic_1.jpg');
+    background-size: cover;
+}
+
+.greeting{
+    width: 80%;
+    text-align: center;
+    white-space: break-spaces;
+    font-size: 2rem;
+    color: rgb(90, 92, 97);
+    border-radius: 10px;
+    background-color: rgb(240, 255, 255,.9);
+}
+
+.menu{
+    margin: 1rem 0rem;
+    top: 20vh;
+}
+
+.menuCategorie{
+    width: 60%;
+    border: 2px solid black;
+    padding: .5rem 1rem;
+    gap: 1rem;
+}
+
+.dropDownBtn{
+    gap: .25rem;
+    padding: 0rem 1rem;
+    font-family: var(--primary-font-family);
+    height: 10vh;
+    width: calc(2rem + 30vw);
+    background-color: rgb(128, 128, 128,.1)
+}
+
+.dropDownBtn:hover{
+    cursor: pointer;
+}
+
+.categorieArrow{
+    color: black;
+    width: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.activeCategorie > .categorieArrow{
+    transform: rotate(90deg);
+}
+
+.categorieName{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.itemContainer{
+    width: 80%;
+}
+
+.itemName, .itemPrice{
+    font-weight: 600;
+}
+
+.aboutHeader{
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.aboutText{
+    margin: 0rem 2rem;
+}
+
